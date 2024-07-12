@@ -14,7 +14,7 @@ try:
 
     time.sleep(2)
 
-    results = driver.find_elements(By.CSS_SELECTOR, 'div.g')
+    results = driver.find_elements(By.TAG_NAME, 'cite')
 
     for result in results:
         if "https://www.python.org" in result.text:
